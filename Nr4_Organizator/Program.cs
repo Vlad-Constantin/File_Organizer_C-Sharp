@@ -8,16 +8,28 @@ namespace Organizator
         {
             string path = Menu();
             Console.WriteLine("Valid path...");
-            Create_Dirs(path);
+            CreateDirsForExtensions(path);
+            Console.WriteLine("Folders created successfully!");
+            
+
+
+
+
+
         }
         static string[] Dir_types = {
-                "Pictures","PDF","Txt","Exe"
+            "Pictures", "Videos", "PDF_files", "Music", "TXT_files", "Word_files", "Excel_files", "Exe_files", "Archived_files", 
         };
         static string[][] File_ext = {
-            new string[] {".jpg",".jpeg",".png",".JPG"},
-            new string[] {".pdf",".PDF"},
-            new string[] {".txt",".TXT"},
-            new string[] {".exe"}
+            new string[] { ".jpg", ".jpeg", ".png", ".JPG" },
+            new string[] { ".mp4", ".mov", ".MOV", ".avi" },
+            new string[] { ".pdf", ".PDF" },
+            new string[] { ".mp3" },
+            new string[] { ".txt" },
+            new string[] { ".doc", ".docx" },
+            new string[] { ".csv", ".xlsx", ".xls" },
+            new string[] { ".exe" },
+            new string[] { ".zip", ".7z" }
         };
         static string Menu()
         {
@@ -40,18 +52,45 @@ namespace Organizator
             return Directory.Exists(path);
         }
 
-        static void Create_Dirs(string path)
+        static void CreateDirsForExtensions(string path)
         {
-            foreach(string dir in Dir_types)
-            {
-                string dir_patch = Path.Combine(path, dir);
-                if (!Directory.Exists(dir_patch))
-                {
-                    Directory.CreateDirectory(dir_patch);
-                }
-            }   
+            string[] files = Directory.GetFiles(path);
 
+            foreach (string file in files)
+            {
+                string fileExtension = Path.GetExtension(file);
+                string destinationFolder = GetDestinationFolder(fileExtension);
+
+                if (destinationFolder != null)
+                {
+                    string dirPath = Path.Combine(path, destinationFolder);
+                    if (!Directory.Exists(dirPath))
+                    {
+                        Directory.CreateDirectory(dirPath);
+                    }
+                }
+            }
         }
+
+
+        static string GetDestinationFolder(string fileExtension)
+        {
+            for (int i = 0; i < File_ext.Length; i++)
+            {
+                string[] supportedExtensions = File_ext[i];
+
+                foreach (string extension in supportedExtensions)
+                {
+                    if (string.Equals(extension, fileExtension, StringComparison.OrdinalIgnoreCase))
+                    {
+                        return Dir_types[i];
+                    }
+                }
+            }
+
+            return null;
+        }
+
 
     }
 }
