@@ -1,0 +1,15 @@
+C:\C#  .net\Nr4_Organizator\Nr4_Organizator\bin\Debug\net6.0\Nr4_Organizator.exe
+C:\C#  .net\Nr4_Organizator\Nr4_Organizator\bin\Debug\net6.0\Nr4_Organizator.deps.json
+C:\C#  .net\Nr4_Organizator\Nr4_Organizator\bin\Debug\net6.0\Nr4_Organizator.runtimeconfig.json
+C:\C#  .net\Nr4_Organizator\Nr4_Organizator\bin\Debug\net6.0\Nr4_Organizator.dll
+C:\C#  .net\Nr4_Organizator\Nr4_Organizator\bin\Debug\net6.0\Nr4_Organizator.pdb
+C:\C#  .net\Nr4_Organizator\Nr4_Organizator\obj\Debug\net6.0\Nr4_Organizator.csproj.AssemblyReference.cache
+C:\C#  .net\Nr4_Organizator\Nr4_Organizator\obj\Debug\net6.0\Nr4_Organizator.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#  .net\Nr4_Organizator\Nr4_Organizator\obj\Debug\net6.0\Nr4_Organizator.AssemblyInfoInputs.cache
+C:\C#  .net\Nr4_Organizator\Nr4_Organizator\obj\Debug\net6.0\Nr4_Organizator.AssemblyInfo.cs
+C:\C#  .net\Nr4_Organizator\Nr4_Organizator\obj\Debug\net6.0\Nr4_Organizator.csproj.CoreCompileInputs.cache
+C:\C#  .net\Nr4_Organizator\Nr4_Organizator\obj\Debug\net6.0\Nr4_Organizator.dll
+C:\C#  .net\Nr4_Organizator\Nr4_Organizator\obj\Debug\net6.0\refint\Nr4_Organizator.dll
+C:\C#  .net\Nr4_Organizator\Nr4_Organizator\obj\Debug\net6.0\Nr4_Organizator.pdb
+C:\C#  .net\Nr4_Organizator\Nr4_Organizator\obj\Debug\net6.0\Nr4_Organizator.genruntimeconfig.cache
+C:\C#  .net\Nr4_Organizator\Nr4_Organizator\obj\Debug\net6.0\ref\Nr4_Organizator.dll
